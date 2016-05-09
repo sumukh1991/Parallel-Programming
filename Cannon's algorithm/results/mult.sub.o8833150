@@ -1,0 +1,3 @@
+Matrix Multiplication size : 1024 , nodes : 16 
+Time taken (sequential): 3.064674
+Time taken (distributed): 0.301269

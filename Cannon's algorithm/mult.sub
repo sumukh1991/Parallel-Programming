@@ -1,0 +1,9 @@
+#!/bin/sh -l
+# FILENAME:  mult.sub
+
+module load devel
+cd $PBS_O_WORKDIR
+
+mpiexec -n 16 ./out
+
+

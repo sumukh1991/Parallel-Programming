@@ -1,0 +1,14 @@
+Author		: Halymysore Ravindra, Sumukh
+Date		: 03/11/2016
+Description	: Report - Take home assignment
+
+Graph count :
+
+* Have implemented a modified traverse function, recursively called by the threads from the 'task' and 'parallel for' openMP constructs in the same file (graphCount.c)
+
+* Tested the code multiple times to make sure the program is race free
+
+* Have included the job results obtained from the scholar machine (non edited/modified) in the results folder 
+
+
+

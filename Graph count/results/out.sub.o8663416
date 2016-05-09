@@ -1,0 +1,5 @@
+Recursive traverse time (v1.0) : 0.000009, count : 321
+Recursive traverse time (v2.0) : 0.000006, count : 321
+Recursive traverse time (task): 0.050028, count : 321
+Recursive traverse time (parallel for): 0.070028, count : 321
+brute force count: 321

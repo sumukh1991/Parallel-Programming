@@ -1,0 +1,57 @@
+/****
+ * Author : Hallymysore Ravindra, Sumukh
+ * Date	  : 04/15/2016
+ * Desc   : Report (Matrix multiplication using distributed memory - MPI library)
+ ****/
+
+Implemented matrix multiplication by distributing the matrix elements using checkerboard pattern and computing the individual result matrices in the nodes using Cannon's algorithm.
+
+The timing results observed have been tabulated below:
+
+------
+For matrix size of 1024X1024, on 4 nodes
+------
+
+Trial 1:
+Time taken (sequential): 2.315063
+Time taken (distributed): 0.836066
+
+Speedup: 2.76898
+
+Trial 2:
+Time taken (sequential): 2.298650
+Time taken (distributed): 0.856744
+
+Speedup: 2.68302
+
+Trial 3:
+Time taken (sequential): 2.134977
+Time taken (distributed): 0.664549
+
+Speedup: 3.21267
+
+------
+For matrix size of 1024X1024, on 16 nodes
+------
+
+Trial 1:
+Time taken (sequential): 3.024446
+Time taken (distributed): 0.148164
+
+Speedup: 20.4134
+
+Trial 2:
+Time taken (sequential): 3.064674
+Time taken (distributed): 0.301269
+
+Speedup: 10.17252
+
+Trial 3:
+Time taken (sequential): 3.061733
+Time taken (distributed): 0.188208
+
+Speedup: 16.26764
+
+Get ~2.5X-3.5X (on 4 nodes) and ~10x-20x (on 16 nodes) performance boost using distributed parallel processing in comparison to sequential processing.
+
+Limitations: The matrix size has to be a perfectely divisible number by the number of nodes and that the number of nodes used in the parallel processing should be a perfect square number.
